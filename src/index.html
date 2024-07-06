@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Currency Converter</title>
+</head>
+<body class="bg-violet-800">
+  <div class="wrapper bg-white rounded-md">
+    <header class="font-bold text-2xl text-center">Currency Converter</header>
+    <form action="#">
+      <div class="amount">
+        <label for="amount" class="font-semibold text-lg">Enter Amount</label>
+        <input id="amount" class="w-full h-12 border-2 border-black px-2 rounded-md" type="text" value="1">
+      </div>
+      <div class="drop-list flex flex-col md:flex-row">
+        <div class="from flex-1">
+          <label for="from" class="font-semibold">From</label>
+          <select id="from" class="w-full h-12 px-4 rounded-md border-2 border-black"></select>
+        </div>
+        <div class="icon my-4 md:my-0 md:w-14"><img src="./swap-image.png" alt="Swap"></div>
+        <div class="to flex-1">
+          <label for="to" class="font-semibold">To</label>
+          <select id="to" class="w-full h-12 px-4 rounded-md border-2 border-black"></select>
+        </div>
+      </div>
+      <div class="exchange-rate mt-4"></div>
+      <button class="button bg-violet-800 w-full h-12 text-white font-bold hover:opacity-70 rounded-md">Get Exchange Rate</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
